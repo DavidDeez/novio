@@ -105,7 +105,7 @@
   font-size: 6rem;
   font-weight: bold;
   font-family:'Courier New', Courier, monospace;
-  color: orange;
+  color: #ff6600;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
 }
@@ -124,7 +124,7 @@
 
 .cta-button {
   padding: 10px 20px;
-  background-color:orange;
+  background-color:#ff6600;
   border: none;
   border-radius: 5px;
   color: white;
@@ -203,7 +203,7 @@
   left: -20px;
   width: 40px;
   height: 40px;
-  background:orange;
+  background:#ff6600;
   transform: rotate(45deg);
   z-index: 1;
 }
@@ -216,7 +216,7 @@
 .feature-icon {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: orange;
+  color: #ff6600;
 }
 
 .feature-item h3 {
@@ -426,7 +426,7 @@
 }
 
 .universities h2 {
-    color: orange;
+    color: #ff6600;
     font-size: 2em;
     margin-bottom: 10px;
 }
@@ -752,7 +752,7 @@ body {
     left: 0;
     width: 100%;
     background: black;
-    color: orange;
+    color: #ff6600;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -784,7 +784,7 @@ body {
 }
 
 .top-bar nav ul li a {
-    color: orange;
+    color: #ff6600;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -813,7 +813,7 @@ body {
 }
 
 .search-container button {
-    background: orange;
+    background: #ff6600;
     border: none;
     padding: 8px 10px;
     cursor: pointer;
@@ -823,7 +823,7 @@ body {
 
 .search-container button:hover {
     background: white;
-    color: orange;
+    color: #ff6600;
 }
 
 /* Mobile Menu */
@@ -831,7 +831,7 @@ body {
     display: none;
     font-size: 24px;
     cursor: pointer;
-    color: orange;
+    color: #ff6600;
 }
 
 /* Responsive Design */
@@ -896,7 +896,7 @@ body {
 
 .business-content h2 {
     font-size: 2rem;
-    color: orange; /* Orange Theme */
+    color: #ff6600; /* #ff6600 Theme */
 }
 
 .business-content p {
@@ -929,7 +929,7 @@ body {
 }
 
 .learn-more {
-    background-color: orange;
+    background-color: #ff6600;
     color: white;
 }
 
@@ -968,7 +968,7 @@ body {
 }
 
 .highlight {
-    color: #ff6600; /* Orange Accent */
+    color: #ff6600; /* #ff6600 Accent */
 }
 
 /* Chatbox */
@@ -1120,51 +1120,561 @@ button:hover {
     background: #cc5500;
 }
 
+/* Benefits Section - Black and #ff6600 Theme */
+.benefits-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+}
+
+.benefits-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ff8c42; /* #ff6600 heading */
+}
+
+/* Plan Card Styles */
+.plan-card {
+  background: #1a1a1a; /* Dark gray background */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.plan-card h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff8c42; /* #ff6600 heading */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plan-card h2 i {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.plan-card h2.active i {
+  transform: rotate(180deg);
+}
+
+.plan-details {
+  display: none;
+  margin-top: 20px;
+}
+
+.plan-details.active {
+  display: block;
+}
+
+.plan-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ff8c42; /* #ff6600 subheading */
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-card ul li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #ccc; /* Light gray text */
+}
+
+.plan-card ul li::before {
+  content: "✔️"; /* Checkmark emoji */
+  margin-right: 10px;
+  color: #ff8c42; /* #ff6600 checkmark */
+}
+
+.plan-card ul li.cross::before {
+  content: "❌"; /* Cross emoji */
+  color: #ff4444; /* Red cross */
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #ff8c42; /* #ff6600 button */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff6f00; /* Darker #ff6600 on hover */
+}
 
 
+ /* General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1a1a1a;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo img {
+    width: 120px;
+    border-radius: 10px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dropbtn:hover {
+    background: #ff6600;
+    color: white;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #222;
+    min-width: 180px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 15px;
+    display: block;
+    text-decoration: none;
+    transition: background 0.3s;
+    border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+    background: #ff6600;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    align-items: center;
+    background: #2a2a2a;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+#search-bar {
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    width: 220px;
+    background: none;
+    color: white;
+    outline: none;
+}
+
+#search-bar::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#search-btn {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+#search-btn:hover {
+    background: #cc5500;
+}
+
+/* Authentication Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.signin-btn,
+.register-btn {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.register-btn {
+    background: #ff6600;
+    border: none;
+}
+
+.signin-btn:hover {
+    background: #ff6600;
+    border-color: #ff6600;
+    transform: scale(1.05);
+}
+
+.register-btn:hover {
+    background: #cc5500;
+    transform: scale(1.05);
+}
+
+/* Right Section */
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.dark-mode-toggle:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+/* Logo Text Styling */
+.logo-text {
+    font-family:'Courier New', Courier, monospace; /* Use a stylish, curvy font */
+    font-size: 32px; /* Adjust size as needed */
+    color: #ff6600; /* Orange color for emphasis */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    letter-spacing: 1px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo-text:hover {
+    color: #ff8c00; /* Change color on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  /* Matrix Canvas */
+#matrix-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure it stays behind other content */
+}
+
+/* Chatbot Section */
+.chatbot-section {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10; /* Ensure it stays above other content */
+}
+
+/* Chatbot Container */
+.chatbot-container {
+    width: 280px; /* Reduced width */
+    background: #fff;
+    border-radius: 10px; /* Smaller border radius */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Smaller shadow */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Chatbot Header */
+.chatbot-header {
+    background: linear-gradient(135deg, #ff8c00, #ff8c00);
+    color: white;
+    padding: 10px; /* Reduced padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-header h3 {
+    margin: 0;
+    font-size: 16px; /* Smaller font size */
+}
+
+#chatbot-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px; /* Smaller close button */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#chatbot-toggle:hover {
+    transform: rotate(90deg);
+}
+
+/* Chatbot Body */
+.chatbot-body {
+    flex: 1;
+    padding: 10px; /* Reduced padding */
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbot-messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 8px; /* Reduced margin */
+    padding: 8px; /* Reduced padding */
+    background: #f9f9f9;
+    border-radius: 8px; /* Smaller border radius */
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.1); /* Smaller shadow */
+    max-height: 200px; /* Limit height for compactness */
+}
+
+/* Chatbot Messages */
+.message {
+    margin-bottom: 8px; /* Reduced margin */
+    padding: 8px; /* Reduced padding */
+    border-radius: 8px; /* Smaller border radius */
+    max-width: 80%;
+    font-size: 14px; /* Smaller font size */
+    animation: slideIn 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.message.user {
+    background: black;
+    color: white;
+    align-self: flex-end;
+}
+
+.message.bot {
+    background: black;
+    color: white;
+    align-self: flex-start;
+}
+
+/* Chatbot Input Container */
+.chatbot-input-container {
+    display: flex;
+    gap: 8px; /* Reduced gap */
+}
+
+#chatbot-input {
+    flex: 1;
+    padding: 8px; /* Reduced padding */
+    border: 2px solid #ddd;
+    border-radius: 8px; /* Smaller border radius */
+    outline: none;
+    font-size: 14px; /* Smaller font size */
+    transition: border-color 0.3s ease;
+}
+
+#chatbot-input:focus {
+    border-color: black ;
+}
+
+#send-btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 8px 12px; /* Reduced padding */
+    border-radius: 8px; /* Smaller border radius */
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#send-btn:hover {
+    background: gray;
+}
 
   </style>
 </head>
 <body>
-  <header class="top-bar">
-    <div class="logo">Novio</div>
-    <nav>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#contact">Support</a></li>
-        </ul>
-    </nav>
-    <div class="search-container">
-        <input type="text" id="search" placeholder="Search...">
-        <button id="search-btn"><i class="fas fa-search"></i></button>
+  <header class="navbar">
+    <!-- Left Section: Logo -->
+    <div class="logo">
+        <span class="logo-text"><b>Novio</b></span>
     </div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <script>
-      // Toggle Mobile Menu
-function toggleMenu() {
-    document.querySelector('.nav-links').classList.toggle('active');
-}
 
-// Search Functionality
-document.getElementById('search-btn').addEventListener('click', function () {
-    let query = document.getElementById('search').value;
-    if (query) {
-        alert(`Searching for: ${query}`); // Replace with actual search functionality
-    }
-});
+    <!-- Center Section: Navigation Links -->
+    <nav class="nav-links">
+        <div class="dropdown">
+            <button class="dropbtn">Subjects ▾</button>
+            <div class="dropdown-content">
+                <a href="#">AI & ML</a>
+                <a href="#">Cybersecurity</a>
+                <a href="#">Cloud Computing</a>
+            </div>
+        </div>
 
-    </script>
+        <div class="dropdown">
+            <button class="dropbtn">Courses ▾</button>
+            <div class="dropdown-content">
+                <a href="#">Web Development</a>
+                <a href="#">Data Science</a>
+                <a href="#">Networking</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Degrees ▾</button>
+            <div class="dropdown-content">
+                <a href="#">Associate Programs</a>
+                <a href="#">Bachelor’s Degrees</a>
+                <a href="#">Master’s Degrees</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Business ▾</button>
+            <div class="dropdown-content">
+                <a href="#">Corporate Training</a>
+                <a href="#">Custom Learning Paths</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Right Section: Search and Auth Buttons -->
+    <div class="right-section">
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search courses...">
+            <button id="search-btn">🔍</button>
+        </div>
+
+        <div class="auth-buttons">
+            <button class="signin-btn">Sign In</button>
+            <button class="register-btn">Register</button>
+            <button class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode">🌙</button>
+        </div>
+    </div>
 </header>
 
+<script src="navbar.js">
+  document.addEventListener("DOMContentLoaded", function () {
+    // Search Functionality
+    const searchBtn = document.getElementById("search-btn");
+    const searchBar = document.getElementById("search-bar");
 
-  
+    searchBtn.addEventListener("click", function () {
+        let query = searchBar.value.trim();
+        if (query) {
+            alert(`Searching for: ${query}`);
+        } else {
+            alert("Please enter a search term.");
+        }
+    });
+
+    // Dark Mode Toggle
+    const darkModeToggle = document.getElementById("darkModeToggle");
+    const body = document.body;
+
+    darkModeToggle.addEventListener("click", function () {
+        body.classList.toggle("dark-mode");
+        // Save user preference in localStorage
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("darkMode", "enabled");
+        } else {
+            localStorage.setItem("darkMode", "disabled");
+        }
+    });
+
+    // Check for saved dark mode preference
+    if (localStorage.getItem("darkMode") === "enabled") {
+        body.classList.add("dark-mode");
+    }
+
+    // Mobile Navigation Toggle (Optional)
+    const navLinks = document.querySelector(".nav-links");
+    const logo = document.querySelector(".logo");
+
+    logo.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+});
+</script>
+
+
+
     <!-- Hero Section -->
 <section class="hero">
     <div class="hero-content">
-      <h1 class="novio-text">Novio</h1><br><br>
+      <h1 class="novio-text">Novio</h1> <br><br>
       <h2>Empowering Future IT Professionals with AI-Driven Learning</h2>
       <p>Gain hands-on experience, mentorship, and job placement support in one platform.</p>
       <a href="#" class="cta-button">Get Started for Free</a>
@@ -1312,70 +1822,85 @@ document.querySelectorAll('.tab').forEach(tab => {
 </script>
 </style>
 </head>
+
+
+<!-- Chatbot Section -->
 <section class="chatbot-section">
   <div class="chatbot-container">
-      <h2>Meet <span class="highlight">Nova</span> – Novio's AI</h2>
-      <p>Nova is your smart assistant, ready to chat with you.</p>
-      
-      <div class="chatbox">
-          <div class="messages"></div>
-          <div class="input-area">
-              <input type="text" id="user-input" placeholder="Ask Nova anything..." />
-              <button id="send-btn">Send</button>
+      <!-- Chatbot Header -->
+      <div class="chatbot-header">
+          <h3>Novio Chatbot</h3>
+          <button id="chatbot-toggle">×</button>
+      </div>
+
+      <!-- Chatbot Body -->
+      <div class="chatbot-body">
+          <div class="chatbot-messages"></div>
+          <div class="chatbot-input-container">
+              <input type="text" id="chatbot-input" placeholder="Type a message...">
+              <button id="send-btn">🚀</button>
           </div>
       </div>
   </div>
 </section>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const chatbotToggle = document.getElementById("chatbot-toggle");
+    const chatbotContainer = document.querySelector(".chatbot-container");
+    const chatbotMessages = document.querySelector(".chatbot-messages");
+    const chatbotInput = document.getElementById("chatbot-input");
+    const sendBtn = document.getElementById("send-btn");
 
-<script src="chatbot.js"></script>
+    // Toggle Chatbot Visibility
+    chatbotToggle.addEventListener("click", () => {
+        chatbotContainer.style.display = chatbotContainer.style.display === "none" ? "flex" : "none";
+    });
 
+    // Send Message Functionality
+    function sendMessage() {
+        const userMessage = chatbotInput.value.trim();
+        if (userMessage) {
+            // Add User Message
+            addMessage(userMessage, "user");
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const messagesContainer = document.querySelector(".messages");
-        const userInput = document.getElementById("user-input");
-        const sendBtn = document.getElementById("send-btn");
-    
-        const botResponses = {
-            "hello": "Hey there! How can I assist you today?",
-            "what is novio": "Novio is an innovative company specializing in AI solutions.",
-            "who are you": "I'm Nova, Novio's AI chatbot!",
-            "how does novio's ai work": "Novio's AI uses advanced machine learning models to provide smart responses.",
-            "bye": "Goodbye! Have a great day! 😊"
-        };
-    
-        sendBtn.addEventListener("click", function () {
-            let userMessage = userInput.value.trim();
-            if (userMessage === "") return;
-    
-            // Display user message
-            displayMessage(userMessage, "user-msg");
-    
-            // Generate bot response after a short delay
+            // Simulate Bot Response
             setTimeout(() => {
-                let botMessage = botResponses[userMessage.toLowerCase()] || "I'm still learning! Try asking something else.";
-                displayMessage(botMessage, "bot-msg");
-            }, 800);
-    
-            // Clear input field
-            userInput.value = "";
-        });
-    
-        function displayMessage(text, className) {
-            let message = document.createElement("p");
-            message.textContent = text;
-            message.classList.add(className);
-            messagesContainer.appendChild(message);
-    
-            // Auto-scroll to the latest message
-            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+                addMessage("Hello! How can I assist you today?", "bot");
+            }, 500);
+
+            // Clear Input
+            chatbotInput.value = "";
+        }
+    }
+
+    // Send Message on Enter Key
+    chatbotInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+            sendMessage();
         }
     });
-    
-    </script>
-</section>
 
-<script src="chatbot.js"></script>
+    // Send Message on Button Click
+    sendBtn.addEventListener("click", sendMessage);
+
+    // Add Message to Chat
+    function addMessage(text, sender) {
+        const messageElement = document.createElement("div");
+        messageElement.classList.add("message", sender);
+        messageElement.textContent = text;
+        chatbotMessages.appendChild(messageElement);
+
+        // Scroll to Bottom
+        chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+    }
+});
+      </script>
+  </div>
+</div>
+
+<!-- Matrix Background Canvas -->
+<canvas id="matrix-canvas"></canvas>
+
 
 <body>
   <!-- Why Choose Novio Section -->
@@ -1515,7 +2040,7 @@ document.querySelectorAll('.tab').forEach(tab => {
           }
   
           .trending-link {
-              color: orange;
+              color: #ff6600;
               text-decoration: none;
               font-weight: 500;
               display: block;
@@ -1570,7 +2095,7 @@ document.querySelectorAll('.tab').forEach(tab => {
   
           .category a {
               text-decoration: none;
-              color: orange;
+              color: #ff6600;
               font-weight: 500;
               display: block;
               margin-bottom: 5px;
@@ -1602,15 +2127,15 @@ document.querySelectorAll('.tab').forEach(tab => {
           }
   
           .dark-mode .trending-button {
-              background: orange;
+              background: #ff6600;
           }
   
           .dark-mode .category a {
-              color: orange;
+              color: #ff6600;
           }
   
           .dark-mode .category a:hover {
-              color: orange;
+              color: #ff6600;
           }
   
           /* Toggle Button */
@@ -1786,6 +2311,20 @@ document.querySelectorAll('.tab').forEach(tab => {
       </div>
     </div>
   </section>
+
+
+  <!-- JavaScript -->
+  <script src="script.js">// Toggle Plan Details
+    function toggleDetails(header) {
+      const planCard = header.parentElement;
+      const planDetails = planCard.querySelector(".plan-details");
+      const icon = header.querySelector("i");
+    
+      planDetails.classList.toggle("active");
+      header.classList.toggle("active");
+    }</script>
+</body>
+</html>
   <section class="pricing-section">
     <h2>Choose Your Plan</h2>
     <p>Affordable plans for every stage of your IT journey</p>
@@ -1830,19 +2369,20 @@ document.querySelectorAll('.tab').forEach(tab => {
             <button class="select-plan">Contact Sales</button>
         </div>
     </div>
+    <script src="pricing.js">document.addEventListener("DOMContentLoaded", function () {
+      const buttons = document.querySelectorAll(".select-plan");
+    
+      buttons.forEach(button => {
+          button.addEventListener("click", function () {
+              let plan = this.parentElement.querySelector("h3").innerText;
+              alert(`You selected the ${plan} plan!`);
+          });
+      });
+    });
+    </script>
 </section>
 
-<script src="pricing.js">document.addEventListener("DOMContentLoaded", function () {
-  const buttons = document.querySelectorAll(".select-plan");
 
-  buttons.forEach(button => {
-      button.addEventListener("click", function () {
-          let plan = this.parentElement.querySelector("h3").innerText;
-          alert(`You selected the ${plan} plan!`);
-      });
-  });
-});
-</script>
 
   
   <section id="testimonials">
@@ -1879,7 +2419,7 @@ document.querySelectorAll('.tab').forEach(tab => {
 
     <p class="review">⭐ <span id="reviewCount">2083</span> Reviews</p>
 
-    <button class="dark-mode-toggle">🌙 Dark Mode</button>
+    
 </section>
 
     <script>
@@ -2255,7 +2795,7 @@ document.querySelectorAll('.tab').forEach(tab => {
   }
 
   .newsletter button {
-      background-color: #ff9800;
+      background-color: #ff6600;
       color: #fff;
       border: none;
       padding: 10px 15px;
@@ -2265,7 +2805,7 @@ document.querySelectorAll('.tab').forEach(tab => {
   }
 
   .newsletter button:hover {
-      background-color: #e68900;
+      background-color: #ff6600;
   }
 
   /* Footer Bottom */
